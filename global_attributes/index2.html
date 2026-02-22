@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All HTML5 Elements Demo</title>
+<base href="#">
+<link rel="stylesheet" href="#">
+<style>
+body{font-family:Arial;margin:20px;background:#f4f4f4}
+section{margin-bottom:30px;padding:15px;background:#fff;border-radius:8px}
+</style>
+<script>
+function demo(){ alert("Script element working!"); }
+</script>
+<noscript>Your browser does not support JavaScript.</noscript>
+</head>
+
+<body>
+
+<header>
+<h1>HTML5 Complete Elements Demo</h1>
+<nav>
+<a href="#">Home</a> |
+<a href="#">About</a> |
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<main>
+
+<!-- TEXT CONTENT -->
+<section>
+<h2>Text Content Elements</h2>
+
+<p>This is a <strong>strong</strong>, <em>em</em>, <b>b</b>, <i>i</i>, <u>u</u>, <mark>mark</mark>.</p>
+<p><small>small</small>, <del>deleted</del>, <ins>inserted</ins>, <sub>sub</sub>, <sup>sup</sup></p>
+<p><abbr title="HyperText Markup Language">HTML</abbr></p>
+<p><cite>Book Title</cite> by <q>Author</q></p>
+<blockquote>Blockquote example</blockquote>
+<address>Written by Ikraan Hussein</address>
+<code>console.log("Hello")</code>
+<pre>Preformatted text</pre>
+<kbd>Ctrl</kbd>
+<samp>Output</samp>
+<var>x</var>
+<time datetime="2026-02-22">February 22, 2026</time>
+<br>
+<hr>
+
+</section>
+
+<!-- LISTS -->
+<section>
+<h2>Lists</h2>
+<ul><li>Item 1</li><li>Item 2</li></ul>
+<ol><li>First</li><li>Second</li></ol>
+<dl>
+<dt>HTML</dt>
+<dd>Markup language</dd>
+</dl>
+</section>
+
+<!-- MEDIA -->
+<section>
+<h2>Media</h2>
+
+<img src="https://via.placeholder.com/150" alt="image">
+
+<figure>
+<img src="https://via.placeholder.com/100" alt="">
+<figcaption>Figcaption Example</figcaption>
+</figure>
+
+<audio controls>
+<source src="#" type="audio/mpeg">
+</audio>
+
+<video width="200" controls>
+<source src="#" type="video/mp4">
+<track src="#" kind="subtitles">
+</video>
+
+<picture>
+<source media="(min-width:650px)" srcset="#">
+<img src="https://via.placeholder.com/120" alt="">
+</picture>
+
+<iframe src="#"></iframe>
+<embed src="#">
+<object data="#"></object>
+
+</section>
+
+<!-- TABLE -->
+<section>
+<h2>Table</h2>
+<table border="1">
+<caption>Sample Table</caption>
+<colgroup>
+<col span="1">
+</colgroup>
+<thead>
+<tr><th>Header1</th><th>Header2</th></tr>
+</thead>
+<tbody>
+<tr><td>Data1</td><td>Data2</td></tr>
+</tbody>
+<tfoot>
+<tr><td>Footer1</td><td>Footer2</td></tr>
+</tfoot>
+</table>
+</section>
+
+<!-- FORMS -->
+<section>
+<h2>Form Elements</h2>
+
+<form>
+<fieldset>
+<legend>Personal Info</legend>
+
+<label>Name:</label>
+<input type="text"><br><br>
+
+<input type="password">
+<input type="email">
+<input type="number">
+<input type="date">
+<input type="time">
+<input type="color">
+<input type="range">
+<input type="file">
+<input type="checkbox">
+<input type="radio">
+<input type="submit">
+<input type="reset">
+<input type="search">
+<input type="url">
+<input type="tel">
+<input type="hidden">
+
+<textarea></textarea>
+
+<select>
+<optgroup label="Group">
+<option>Option 1</option>
+<option>Option 2</option>
+</optgroup>
+</select>
+
+<datalist id="browsers">
+<option value="Chrome">
+<option value="Firefox">
+</datalist>
+
+<input list="browsers">
+
+<button type="button" onclick="demo()">Click Me</button>
+<output>Output</output>
+<meter value="0.6">60%</meter>
+<progress value="50" max="100"></progress>
+
+</fieldset>
+</form>
+
+</section>
+
+<!-- SEMANTIC STRUCTURE -->
+<section>
+<article>
+<header><h3>Article</h3></header>
+<p>Article content</p>
+<footer>Article footer</footer>
+</article>
+
+<aside>Aside content</aside>
+
+<details>
+<summary>More Info</summary>
+<p>Hidden details text</p>
+</details>
+
+</section>
+
+<!-- INTERACTIVE -->
+<section>
+<h2>Interactive & Scripting</h2>
+
+<dialog open>Dialog box example</dialog>
+
+<template>
+<p>This is inside template</p>
+</template>
+
+<canvas width="100" height="100"></canvas>
+
+<svg width="100" height="100">
+<circle cx="50" cy="50" r="40" stroke="black" fill="red"/>
+</svg>
+
+<math>
+<mi>x</mi>
+<mo>=</mo>
+<mfrac>
+<mn>1</mn>
+<mn>2</mn>
+</mfrac>
+</math>
+
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 HTML Complete Demo</p>
+</footer>
+
+</body>
+</html>

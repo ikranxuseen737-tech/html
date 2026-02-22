@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic HTML Website</title>
+    <meta name="description" content="Example website using HTML semantic elements">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header, nav, main, section, article, aside, footer {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background: #444;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        section {
+            background: white;
+            flex: 3;
+        }
+
+        aside {
+            background: #ddd;
+            flex: 1;
+        }
+
+        article {
+            background: #fafafa;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #333;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        mark {
+            background: yellow;
+        }
+
+        time {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Semantic Website</h1>
+        <p>Learning HTML5 Semantic Elements</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section -->
+        <section>
+            <h2>Latest Articles</h2>
+
+            <!-- Article 1 -->
+            <article>
+                <header>
+                    <h3>What is Semantic HTML?</h3>
+                    <p>Published on <time datetime="2026-02-19">February 19, 2026</time></p>
+                </header>
+
+                <p>
+                    Semantic HTML uses meaningful tags like 
+                    <mark>&lt;article&gt;</mark>, 
+                    <mark>&lt;section&gt;</mark>, 
+                    and <mark>&lt;nav&gt;</mark>.
+                </p>
+
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Example image">
+                    <figcaption>Example semantic structure</figcaption>
+                </figure>
+
+                <footer>
+                    <p>Written by <address>Ikraan Hussein</address></p>
+                </footer>
+            </article>
+
+            <!-- Article 2 -->
+            <article>
+                <header>
+                    <h3>Why Use Semantic Tags?</h3>
+                </header>
+                <p>
+                    They improve accessibility, SEO, and code readability.
+                </p>
+                <details>
+                    <summary>Read more</summary>
+                    <p>
+                        Semantic elements help browsers and developers understand page structure clearly.
+                    </p>
+                </details>
+            </article>
+
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="#">HTML Tutorial</a></li>
+                <li><a href="#">CSS Guide</a></li>
+                <li><a href="#">Web Design Tips</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Semantic Website</p>
+    </footer>
+
+</body>
+</html>

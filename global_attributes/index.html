@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Global Attributes Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f2f2f2;
+        }
+        .box {
+            padding: 15px;
+            margin: 10px 0;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body id="mainBody" class="container"
+      data-user="student"
+      title="This is the main body"
+      spellcheck="true">
+
+    <!-- Heading -->
+    <h1 id="mainTitle"
+        class="box"
+        style="color: darkblue;"
+        contenteditable="true"
+        tabindex="1"
+        accesskey="h">
+        Global Attributes Example
+    </h1>
+
+    <!-- Paragraph -->
+    <p id="intro"
+       class="box"
+       draggable="true"
+       data-info="intro-paragraph"
+       title="Drag me!"
+       translate="yes">
+        This paragraph is draggable and uses several global attributes.
+    </p>
+
+    <!-- Hidden Element -->
+    <p id="hiddenText"
+       class="box"
+       hidden
+       data-secret="true">
+        You should not see this text because it is hidden.
+    </p>
+
+    <!-- Div -->
+    <div id="contentBox"
+         class="box"
+         lang="en"
+         dir="ltr"
+         title="Content Box"
+         tabindex="2">
+        This is a div container with language and direction attributes.
+    </div>
+
+    <!-- Span -->
+    <span id="highlight"
+          class="box"
+          style="background: yellow;"
+          contenteditable="true"
+          spellcheck="false">
+        Editable highlighted text
+    </span>
+
+    <!-- Link -->
+    <a id="myLink"
+       class="box"
+       href="#"
+       title="Clicking does nothing"
+       accesskey="l"
+       draggable="true">
+        Sample Link
+    </a>
+
+    <!-- Image -->
+    <img id="sampleImage"
+         class="box"
+         src="https://via.placeholder.com/150"
+         alt="Placeholder Image"
+         title="Example Image"
+         draggable="false"
+         data-img="demo">
+
+    <!-- Button -->
+    <button id="myButton"
+            class="box"
+            onclick="alert('Button clicked!')"
+            title="Click Me"
+            accesskey="b">
+        Click Button
+    </button>
+
+    <!-- List -->
+    <ul id="list"
+        class="box"
+        title="Sample List"
+        tabindex="3">
+        <li id="item1" data-number="1">Item One</li>
+        <li id="item2" data-number="2">Item Two</li>
+        <li id="item3" data-number="3">Item Three</li>
+    </ul>
+
+    <!-- Form -->
+    <form id="myForm"
+          class="box"
+          title="Example Form"
+          autocomplete="on">
+        
+        <label for="nameInput">Name:</label>
+        <input id="nameInput"
+               type="text"
+               placeholder="Enter name"
+               required
+               tabindex="4"
+               data-field="username">
+
+        <br><br>
+
+        <label for="emailInput">Email:</label>
+        <input id="emailInput"
+               type="email"
+               placeholder="Enter email"
+               spellcheck="false">
+
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!-- Article -->
+    <article id="articleDemo"
+             class="box"
+             title="Article Section"
+             contenteditable="true">
+        <h2>Article Title</h2>
+        <p>This article is editable.</p>
+    </article>
+
+    <!-- Footer -->
+    <footer id="footer"
+            class="box"
+            style="background: #333; color: white;"
+            translate="no">
+        © 2026 Global Attributes Demo
+    </footer>
+
+</body>
+</html>
